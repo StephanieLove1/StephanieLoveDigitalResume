@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Stephanie Love's Digital Resume</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="I am Stephanie Love, a visionary web architect and creative engineer with expertise in MERN full-stack web development. Explore my projects and skills to discover captivating and innovative digital experiences.">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+  <style>
+    body,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+      margin-bottom: 12px
+    }
+
+    .w3-sidebar {
+      width: 120px;
+      background: #222;
+    }
+
+    #main {
+      margin-left: 120px
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .topBtn {
+      display: flex;
+      align-items: center;
+      border-radius: 60%;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Verdana, sans-serif;
+    }
+
+    .mySlides,
+    .mySlides2,
+    .mySlides3 {
+      display: none;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    .slideshow-container,
+    .slideshow-container2,
+    .slideshow-container3 {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    .dot,
+    .dot2,
+    .dot3 {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active {
+      background-color: #717171;
+    }
+
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @media only screen and (max-width: 300px) {
+      .text {
+        font-size: 11px
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      #main {
+        margin-left: 0
+      }
+    }
+  </style>
+
+</head>
+
+<body class="w3-black">
+
+
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-opacity w3-hover-opacity-off">
+
+    <img src="./imageAssets/StephanieLoveFBStoriesAd.PNG.png" alt="small pic of beautiful business lady"
+      style="width:100%">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <p>Main</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-user w3-xxlarge"></i>
+      <p>Introduction</p>
+    </a>
+    <a href="#skills" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-desktop w3-xxlarge"></i>
+      <p>SkillSet</p>
+    </a>
+    <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-eye w3-xxlarge"></i>
+      <p>Creations</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>Connect</p>
+    </a>
+  </nav>
+
+
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">Main</a>
+      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">Introduction</a>
+      <a href="#skills" class="w3-bar-item w3-button" style="width:25% !important">SkillSet</a>
+      <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">Creations</a>
+      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">Connect</a>
+    </div>
+  </div>
+
+
+  <div class="w3-padding-large" id="main">
+
+    <header class="w3-container w3-padding-32 w3-center w3-black w3-wide" id="main">
+      <h1 class="w3-jumbo"> Stephanie Love</h1>
+      <h3 class="w-3-opacity-min w3-hover-opacity-off w3-animate-fading">Visionary Web Architect & Creative Engineer
+      </h3>
+      <br>
+      <br class="w3-padding-64"><img src="./imageAssets/StephanieLoveFBStoriesAd.PNG.png" alt="Beautiful Business Lady"
+        class="w3-image w3-opacity w3-hover-opacity-off" width="992" height="1108">
+    </header>
+
+
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+      <h3 class="w3-text-light-grey">Introducing: Stephanie Love <br>
+        Empowering Digital Experiences Through Implementation of Art & Solutions</h3>
+      <h5>Explore how ...</h5>
+      <div> <button class="toggleBtn w3-button w3-circle w3-dark-grey w3-text-black" onclick="myToggleFunction()"><i
+            class="fa fa-arrow-down"></i> <i class="fa fa-arrow-up"></i>
+        </button>
+      </div>
+
+      <hr style="width:200px" class="w3-opacity">
+
+      <h4 class="w3-opacity-min w3-hover-opacity-off w3-text-light-grey hide" id="myToggleShowContent">In the dynamic
+        world of web development, where creativity and technical expertise intersect,
+        one emerging name stands out: Stephanie Love. With a passion for innovation and an unwavering commitment to
+        excellence,
+        I bring a unique blend of artistry and technical proficiency to the realm of MERN full-stack web development.
+        Allow me to
+        introduce myself, Stephanie Love, the visionary engineer who will take your digital experiences to new heights.
+
+        I am not just a name; I embody a creative force fueled by a relentless desire to push boundaries and craft
+        captivating
+        online experiences. With my knowledge of the MERN stack—MongoDB, Express, React, and Node.js—I leverage the
+        power of this comprehensive technology suite to architect and develop dynamic and highly functional web
+        applications. From front-end design to back-end implementation, I manuveur across the entire development
+        process,
+        ensuring seamless user experiences and top-notch performance.
+
+        But what truly sets me apart is my innate ability to see beyond the technicalities. As a visionary, I transcend
+        conventional design practices, elevating websites and applications into works of art that leave a lasting
+        impression.
+        My creative prowess is unrivaled, infusing my projects with a unique blend of innovation and beauty. From
+        choosing
+        the perfect color schemes to crafting layouts that effortlessly guide users through their digital journey, my
+        design
+        aesthetic is nothing short of mesmerizing.
+
+        My color theory strategies are bold and tasteful, breathing life into each project I touch. With an expert
+        understanding of how colors evoke emotions and influence user behavior, I create immersive experiences that
+        resonate
+        deeply with audiences. My meticulous attention to detail ensures that every hue, every shade, and every gradient
+        is
+        carefully curated to harmonize with the brand identity and evoke the desired emotional response.
+
+        In addition to my creative brilliance, I bring a methodical and logical approach to my design frameworks. My
+        clean
+        and organized code structures are a testament to my commitment to building scalable and efficient web solutions.
+        I understand that a user-friendly design system is not just aesthetically pleasing but also functions seamlessly
+        across devices and platforms. With empathy for the end-users, I design interfaces that intuitively respond to
+        their needs, enhancing usability and accessibility.
+
+        Complexity is not a challenge for me; it is an opportunity to shine. With a strategic mindset and a knack for
+        problem-solving, I fearlessly take on multifunctional design systems, dissecting them into manageable components
+        and crafting elegant solutions. My collaborative nature allows me to work seamlessly with clients and
+        cross-functional teams, effortlessly merging creative input with technical feasibility. My ability to bridge the
+        gap between design and development ensures that my projects are not just visually stunning but also
+        highly functional and aligned with business goals.
+
+        I am more than just a web developer. I am a driving force of innovation, a creative powerhouse, and a visionary
+        leader.
+        With my unwavering dedication to excellence and my innate ability to blend artistry with technical expertise,
+        I am ready to take your digital experiences to new heights. Embark on a journey with me, Stephanie Love, and
+        together, let's create extraordinary web solutions that captivate and inspire audiences around the globe.
+      </h4>
+
+
+      <div class="w3-padding-64 w3-content" id="skills">
+        <h3 class="w3-text-light-grey">My Ever-Evolving Technical Skillset</h3>
+        <hr style="width:200px" class="w3-opacity">
+      </div>
+
+
+
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-dark-grey w3-xlarge w3-padding-32">Front-End Technologies</li>
+            <li class="w3-padding-16">HTML and XML</li>
+            <li class="w3-padding-16">JavaScript</li>
+            <li class="w3-padding-16">jQuery</li>
+            <li class="w3-padding-16">React.js</li>
+            <li class="w3-padding-16">Redux</li>
+            <li class="w3-padding-16">React-Redux</li>
+            <li class="w3-padding-16">Cascading Style Sheets (CSS)</li>
+            <li class="w3-padding-16">Bootstrap</li>
+            <li class="w3-padding-16">SASS</li>
+          </ul>
+        </div>
+
+        <div class="w3-half">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-dark-grey w3-xlarge w3-padding-32">Back-End Technologies</li>
+            <li class="w3-padding-16">Node.js</li>
+            <li class="w3-padding-16">MongoDB</li>
+            <li class="w3-padding-16">Mongoose</li>
+            <li class="w3-padding-16">Express</li>
+            <li class="w3-padding-16">AJAX</li>
+            <li class="w3-padding-16">Axios</li>
+            <li class="w3-padding-16">Mocha/Chai</li>
+            <li class="w3-padding-16">CRUD Commands</li>
+            <li class="w3-padding-16">RESTful API Principles</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="w3-padding-64 w3-content" id="photos">
+      <h2 class="w3-text-light-grey">My Featured Creations</h2>
+      <hr style="width:200px" class="w3-opacity w3-padding-32">
+
+
+      <div>
+        <h4 class="w3-center w3-opacity-min w3-hover-opacity-off">Feature 1 <br>Women's Luxury Footwear e-Commerce Page
+          | Full-Stack Development | Project Visionary, Lead Developer, Lead Designer | React, JSX, ES6, Redux,
+          React-Redux, CSS, CSS-Grid, CSS-Flexbox, Express, Axios, Mongoose, MongoDB, JSON WebToken, Helmet, RESTful API
+          Principles</h4><br>
+
+
+        <div class="slideshow-container3">
+
+          <div class="mySlides3 fade">
+            <div class="numbertext"></div>
+            <img src="./imageAssets/SMEntry_Red.png" style="width:100%">
+            <div class="text"></div>
+          </div>
+
+          <div class="mySlides3 fade">
+            <div class="numbertext"></div>
+            <img src="./imageAssets/SMHeader.png" style="width:100%">
+            <div class="text"></div>
+          </div>
+
+          <div class="mySlides3 fade">
+            <div class="numbertext"></div>
+            <img src="./imageAssets/SlideShoe_SoftChristianL.png" style="width:100%">
+            <div class="text"></div>
+          </div>
+
+          <div class="mySlides3 fade">
+            <div class="numbertext"></div>
+            <img src="./imageAssets/SlideShoe_ChristianL.png" style="width:100%">
+            <div class="text"></div>
+          </div>
+
+          <div class="mySlides3 fade">
+            <div class="numbertext"></div>
+            <img src="./imageAssets/SlideShoe_LouisVHeels.png" style="width:100%">
+            <div class="text"></div>
+          </div>
+
+          <div class="mySlides3 fade">
+            <div class="numbertext"></div>
+            <img src="./imageAssets/SlideShoe_JimmyChoo.png" style="width:100%">
+            <div class="text"></div>
+          </div>
+
+          <div class="mySlides3 fade">
+            <div class="numbertext"></div>
+            <img src="./imageAssets/SMColumns.png" style="width:100%">
+            <div class="text"></div>
+          </div>
+
+          <div class="mySlides3 fade">
+            <div class="numbertext"></div>
+            <img src="./imageAssets/SMTopShoes2.png" style="width:100%">
+            <div class="text"></div>
+          </div>
+
+          <div class="mySlides3 fade">
+            <div class="numbertext"></div>
+            <img src="./imageAssets/SMMiddleShoes1.png" style="width:100%">
+            <div class="text"></div>
+          </div>
+
+          <div class="mySlides3 fade">
+            <div class="numbertext"></div>
+            <img src="./imageAssets/SMMiddleShoes2.png" style="width:100%">
+            <div class="text"></div>
+          </div>
+
+          <div class="mySlides3 fade">
+            <div class="numbertext"></div>
+            <img src="./imageAssets/SMBottomShoes.png" style="width:100%">
+            <div class="text"></div>
+          </div>
+
+          <div class="mySlides3 fade">
+            <div class="numbertext"></div>
+            <img src="./imageAssets/SMFooter.png" style="width:100%">
+            <div class="text"></div>
+          </div>
+
+          <div class="mySlides3 fade">
+            <div class="numbertext"></div>
+            <img src="./imageAssets/SMCart.png" style="width:100%">
+            <div class="text"></div>
+          </div>
+
+          <br>
+
+          <div style="text-align:center">
+            <span class="dot3"></span>
+            <span class="dot3"></span>
+            <span class="dot3"></span>
+            <span class="dot3"></span>
+            <span class="dot3"></span>
+            <span class="dot3"></span>
+            <span class="dot3"></span>
+            <span class="dot3"></span>
+            <span class="dot3"></span>
+            <span class="dot3"></span>
+            <span class="dot3"></span>
+            <span class="dot3"></span>
+            <span class="dot3"></span>
+          </div>
+
+
+          <br>
+          <hr style="width:200px" class="w3-opacity w3-padding-32">
+
+
+          <div>
+            <h4 class="w3-center w3-opacity-min w3-hover-opacity-off">Feature 2 <br> Fiji Islands Tourism Page | Sole
+              Front-End Developer | JavaScript, HTML, CSS, CSS-Grid</h4><br>
+
+
+            <div class="slideshow-container2">
+
+              <div class="mySlides2 fade">
+                <div class="numbertext"></div>
+                <img src="./imageAssets/Tourism1ScreenShot.png" style="width:100%">
+                <div class="text"></div>
+              </div>
+
+              <div class="mySlides2 fade">
+                <div class="numbertext"></div>
+                <img src="./imageAssets/Tourism2ScreenShot-v2.png" style="width:100%">
+                <div class="text"></div>
+              </div>
+
+              <div class="mySlides2 fade">
+                <div class="numbertext"></div>
+                <img src="./imageAssets/Tourism3ScreenShot.png" style="width:100%">
+                <div class="text"></div>
+              </div>
+
+              <div class="mySlides2 fade">
+                <div class="numbertext"></div>
+                <img src="./imageAssets/Tourism4ScreenShot.png" style="width:100%">
+                <div class="text"></div>
+              </div>
+
+              <div class="mySlides2 fade">
+                <div class="numbertext"></div>
+                <img src="./imageAssets/Tourism5ScreenShot.png" style="width:100%">
+                <div class="text"></div>
+              </div>
+
+              <br>
+
+              <div style="text-align:center">
+                <span class="dot2"></span>
+                <span class="dot2"></span>
+                <span class="dot2"></span>
+                <span class="dot2"></span>
+                <span class="dot2"></span>
+              </div>
+
+
+              <br>
+              <hr style="width:200px" class="w3-opacity w3-padding-32">
+
+
+              <div>
+                <h4 class="w3-center w3-opacity-min w3-hover-opacity-off">Feature 3<br>Quantum Yoga & Meditation | Sole
+                  Web Designer | Layout, Typography, Color Theory, Imagery</h4>
+              </div><br>
+
+
+              <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="./imageAssets/quantumym.com_ (10).png" style="width:100%">
+                  <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="./imageAssets/quantumym.com_ (9).png" style="width:100%">
+                  <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="./imageAssets/quantumym.com_ (3).png" style="width:100%">
+                  <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="./imageAssets/quantumym.com_ (8).png" style="width:100%">
+                  <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="./imageAssets/quantumym.com_ (4).png" style="width:100%">
+                  <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="./imageAssets/quantumym.com_ (5).png" style="width:100%">
+                  <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="./imageAssets/quantumym.com_ (6).png" style="width:100%">
+                  <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="./imageAssets/quantumym.com_ (7).png" style="width:100%">
+                  <div class="text"></div>
+                </div>
+
+              </div>
+              <br>
+
+              <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+
+
+              <br>
+              <hr style="width:200px; color: transparent;" class="w3-opacity w3-padding-32">
+
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+          <h2 class="w3-text-light-grey">Connect With Me</h2>
+          <hr style="width:200px" class="w3-opacity">
+
+          <div class="w3-section">
+            <p><a href="https://www.google.com/maps?q=Arizona" target="_blank"><i
+                  class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right w3-hover-opacity">
+              </a></i> Arizona, US
+            </p>
+
+            <p><a href="tel:1+6029038828" target="_blank"><i
+                  class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right w3-hover-opacity">
+              </a></i> Phone: 1 +602 903 8828
+            </p>
+
+            <p><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i
+                  class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right w3-hover-opacity ">
+              </a></i> Email: lovestephanie216@gmail.com
+            </p>
+
+            <p><a href="https://github.com/StephanieLove1" target="_blank"><i
+                  class="fa fa-github fa-fw w3-text-white w3-xxlarge w3-margin-right w3-hover-opacity">
+              </a></i> GitHub: github.com/StephanieLove1
+            </p>
+
+            <p><a href="https://www.linkedin.com/in/stephanie-love-404165281/" target="_blank"><i
+                  class="fa fa-linkedin fa-fw w3-text-white w3-xxlarge w3-margin-right w3-hover-opacity">
+              </a></i> LinkedIn: www.linkedin.com/in/stephanie-love-404165281/
+            </p>
+
+            <p><a href="https://drive.google.com/uc?export=download&id=1DgFKZBVyvV6RJ-fSeTPPgzZtEIhyaev7" target="_blank">
+              <i
+                  class="fa fa-download fa-fw w3-text-white w3-xxlarge w3-margin-right w3-hover-opacity">
+              </a></i> Download My Resume.pdf
+            </p>
+
+            <br>
+
+            <footer class="w3-content w3-padding-16 w3-text-grey w3-large">
+
+              <div class="w3-panel w3-black">
+                <p class="w3-large w3-serif w3-wide w3-animate-fading">
+                  <i class="fa fa-quote-right w3-hover-opacity xw3-margin-right w3-animate-fading"></i>
+                  Art is not imitated. It's interpreted. <cite>~Mazzini</cite>
+                </p>
+              </div><br>
+
+              <div class="footerEnd">
+                <p class="w3-text-grey"> A Stephanie Love Solution | All Rights Reserved&copy; | 2023 </p>
+              </div>
+              <hr style="width:220px" class="w3-opacity"><br>
+
+              <button class="topBtn w3-button w3-circle w3-dark-grey w3-text-black">
+                <a href="#" class="w3-button-small toTop"><i class="fa fa-arrow-up"></i></a>
+              </button>
+
+            </footer>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <script src="./showSlides.js"></script>
+      <script src="./showSlides2.js"></script>
+      <script src="./showSlides3.js"></script>
+      <script src="./toggle.js"></script>
+
+
+</body>
+
+</html>
